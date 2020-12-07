@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Hierarchy</title>
+	</head>
+	<body>
+		<canvas id="theCanvas" width="600" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<p>
+Camera controls:
+<ul style="list-style:none;">
+<li>Click and drag on the image to look around
+<li>Scroll with touchpad or mouse on image to zoom in and out
+</ul>
+	<p>
+Keyboard controls:
+<ul style="list-style:none;">
+<li>w - move the helicopter up
+<li>s - move the helicopter down
+<li>a - move the helicopter to the left
+<li>d - move the helicopter to the right
+<li>f  - move the helicopter forward
+<li>b - move the helicopter backward
+<li>y, Y - yaw rotation - will cause the above controls to have undesired functionality
+<li>p, P - blade pitch rotation
+<li>r, R - increment or decrement blade rotation speed on back and main rotors
+</ul>
+
+<script src="../three/three.js"></script>
+		<script src="cs336util.js"></script>
+		<script src="hw6_helicopter.js"></script>
+		<script src="OBJLoader.js"></script>
+		<script src="OrbitControls.js"></script>
+		<script>window.onload = start</script>
+	</body>
+</html>
